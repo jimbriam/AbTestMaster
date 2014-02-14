@@ -58,7 +58,7 @@ namespace AbTestMaster.Services
             myCookie[Constants.ACTION] = split.Action;
             myCookie[Constants.CONTROLLER] = split.Controller;
             myCookie[Constants.AREA] = split.Area;
-            myCookie.Expires = DateTime.Now.AddYears(1);
+            myCookie.Expires = DateTime.Now.AddMonths(2);
             HttpContext.Current.Response.Cookies.Add(myCookie);
         }
 
